@@ -33,10 +33,10 @@ To develop a Personalized Recipe Recommendation System that leverages Machine Le
     ![Ingredients](https://github.com/mmuirigo/Group-6-Capstone-Project/blob/main/Top10Ingredients.png)
 
 # Modeling
-- **Collaborative Filtering** Implement Collaborative Filtering that makes recommendations by learning patterns from user behavior. It recommends items liked by similar users.
+- **Collaborative Filtering** Implemented Collaborative Filtering to make recommendations by learning patterns from user behavior. It recommended items liked by similar users.
 - **Implement Content-Based recommendation** system using TF-IDF and Nearest Neighbors. This recommends recipes that are similar in content to what the user likes.
-- **Deep Learning Model** The Deep Learning Recommender system uses neural networks to learn complex patterns between users and items. It will learn non-linear relationships between users and items.
-- **The hybrid model** combined collaborative filtering with content-based features. It uses User ID, Recipe ID and Prep time (TotalTimeMinutes) as content feature.The model learns both user preferences (who likes what) and recipe attributes (like prep time) to make better predictions.It learns a dense vector (embedding) for: Each user (how they behave) and Each recipe (how it's rated). These embeddings capture hidden patterns in the data.
+- **Deep Learning Model** The Deep Learning Recommender system to use neural networks to learn complex patterns between users and items. Profited from learning non-linear relationships between users and items.
+- **The hybrid model** combined collaborative filtering with content-based features. It used User ID, Recipe ID and Prep time (TotalTimeMinutes) as content feature.The model learns both user preferences (who likes what) and recipe attributes (like prep time) to make better predictions.It learns a dense vector (embedding) for: Each user (how they behave) and Each recipe (how it's rated). These embeddings capture hidden patterns in the data.
 
 # Summary
 Four recommendation models were implemented and evaluated: collaborative filtering (SVD), content-based filtering, a deep learning model, and a hybrid model. Performance was measured using RMSE, MAE, and Precision@5, along with TensorBoard visualizations for training behavior.
@@ -51,6 +51,4 @@ The **Hybrid Model** proved to be the most robust and accurate, leveraging the s
 
 
 ## Authors <img src="https://raw.githubusercontent.com/mmuirigo/Group-6-Capstone-Project/main/Authors.PNG" width="50" style="vertical-align: middle;"/>
-|Neema|Susan|
-|George|Valentine|
-|Mourine|
+|Neema|Susan|George|Valentine|Mourine|
