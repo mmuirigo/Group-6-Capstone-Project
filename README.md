@@ -21,9 +21,9 @@ To develop a Personalized Recipe Recommendation System that leverages Machine Le
 ## Exploratory Data Analysis
 - Quick Descriptive analysis of both categorical and numerical variables
 - Visualize specific variables of importance to the exercise and evaluate the relationship
-      ### Popularity
+  ### Popularity
      ![Recipe Popularity](https://github.com/mmuirigo/Group-6-Capstone-Project/blob/main/Popularity.png)
-      ### Number of Recipes per year
+  ### Number of Recipes per year
     ![RecipePerYear Popularity](https://github.com/mmuirigo/Group-6-Capstone-Project/blob/main/RecipePerYear.png)
 
 ### Exploratory Data Analysis
