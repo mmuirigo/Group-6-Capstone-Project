@@ -50,7 +50,7 @@ The **Hybrid Model** proved to be the most robust and accurate, leveraging the s
 
 
 
-### Authors <img src="https://raw.githubusercontent.com/mmuirigo/Group-6-Capstone-Project/main/Authors.png" alt="Plate" width="100"/> 
+### Authors <img src="https://raw.githubusercontent.com/mmuirigo/Group-6-Capstone-Project/main/Authors.png" alt="Authors" width="100"/> 
 |Neema|Susan|
 |George|Valentine|
 |Mourine|
