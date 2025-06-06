@@ -1,4 +1,4 @@
-# Recipe Recommender System [At your service](https://github.com/mmuirigo/Group-6-Capstone-Project/blob/main/plate.png)
+# Recipe Recommender System (https://github.com/mmuirigo/Group-6-Capstone-Project/blob/main/plate.png?raw=true)
 
 ## Business Understanding
 Preparing meals is often a challenge due to diverse individual preferences, dietary needs, and varying ingredient availability. This project aims to address these issues by developing a Personalized Recipe Recommendation System using Machine Learning and Natural Language Processing (NLP).
