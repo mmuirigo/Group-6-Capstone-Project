@@ -8,3 +8,7 @@ To develop a Personalized Recipe Recommendation System that leverages Machine Le
 - To build a collaborative filtering model using user ratings and interactions.
 - To combine both approaches into a hybrid recommendation system.
 - To evaluate model performance
+### Dataset Source
+  The project uses the [Food.com Recipes and Reviews dataset](https://www.kaggle.com/datasets/irkaal/foodcom-recipes-and-reviews) from Kaggle.
+   -   Recipes dataset: 522,517 recipes
+   -   Reviews dataset: 1.4M user reviews,ratings & comments.
