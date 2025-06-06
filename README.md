@@ -12,7 +12,7 @@ To develop a Personalized Recipe Recommendation System that leverages Machine Le
   The project uses the [Food.com Recipes and Reviews dataset](https://www.kaggle.com/datasets/irkaal/foodcom-recipes-and-reviews) from Kaggle.
    -   Recipes dataset: 522,517 recipes
    -   Reviews dataset: 1.4M user reviews,ratings & comments.
-# Data Cleaning and EDA
+# Data Cleaning 
 - Missing data handling
 - Data types harmonization including time conversion
 - Deduplication
@@ -31,4 +31,9 @@ To develop a Personalized Recipe Recommendation System that leverages Machine Le
   
    ### Top 10 words from the Ingredient list
     ![Ingredients](https://github.com/mmuirigo/Group-6-Capstone-Project/blob/main/Top10Ingredients.png)
-## 
+
+# Modeling
+- **Collaborative Filtering** Implement Collaborative Filtering that makes recommendations by learning patterns from user behavior. It recommends items liked by similar users.
+- **Implement Content-Based recommendation** system using TF-IDF and Nearest Neighbors. This recommends recipes that are similar in content to what the user likes.
+- **Deep Learning Model** The Deep Learning Recommender system uses neural networks to learn complex patterns between users and items. It will learn non-linear relationships between users and items.
+- **The hybrid model** combined collaborative filtering with content-based features. It uses User ID, Recipe ID and Prep time (TotalTimeMinutes) as content feature.The model learns both user preferences (who likes what) and recipe attributes (like prep time) to make better predictions.It learns a dense vector (embedding) for: Each user (how they behave) and Each recipe (how it's rated). These embeddings capture hidden patterns in the data.
