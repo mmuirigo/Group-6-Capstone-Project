@@ -38,12 +38,17 @@ To develop a Personalized Recipe Recommendation System that leverages Machine Le
 - **Deep Learning Model** The Deep Learning Recommender system uses neural networks to learn complex patterns between users and items. It will learn non-linear relationships between users and items.
 - **The hybrid model** combined collaborative filtering with content-based features. It uses User ID, Recipe ID and Prep time (TotalTimeMinutes) as content feature.The model learns both user preferences (who likes what) and recipe attributes (like prep time) to make better predictions.It learns a dense vector (embedding) for: Each user (how they behave) and Each recipe (how it's rated). These embeddings capture hidden patterns in the data.
 
-# Modeling
+# Summary
 Four recommendation models were implemented and evaluated: collaborative filtering (SVD), content-based filtering, a deep learning model, and a hybrid model. Performance was measured using RMSE, MAE, and Precision@5, along with TensorBoard visualizations for training behavior.
 - Collaborative Filtering (SVD) achieved an RMSE of 1.9881 and MAE of 1.6032, indicating moderate prediction error and suggesting room for improvement through tuning or incorporating side features.
 - Content-Based Filtering showed good precision with a Precision@5 of 0.6971, meaning it was effective at recommending relevant items within the top 5 results, though limited by a lack of collaborative signals.
 - The Deep Learning Model (matrix factorization-based) performed less effectively with an RMSE of 2.1843, likely due to overfitting or insufficient feature diversity.
 - The Hybrid Model, combining user-item embeddings with content features (like preparation time), significantly outperformed all others with an RMSE of 0.3757. TensorBoard confirmed better generalization, smooth loss convergence, and a balanced parameter distribution.
 
-##**Conclusion:** 
+## Conclusion:
 The **Hybrid Model** proved to be the most robust and accurate, leveraging the strengths of both collaborative and content-based methods for optimal recommendation performance.
+
+  ### Authors 😄
+|Neema|Susan|
+|George|Valentine|
+|Mourine|
