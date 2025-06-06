@@ -48,7 +48,9 @@ Four recommendation models were implemented and evaluated: collaborative filteri
 ## Conclusion:
 The **Hybrid Model** proved to be the most robust and accurate, leveraging the strengths of both collaborative and content-based methods for optimal recommendation performance.
 
-  ### Authors 😄
+
+
+### Authors <img src="https://raw.githubusercontent.com/mmuirigo/Group-6-Capstone-Project/main/Authors.png" alt="Plate" width="100"/> 
 |Neema|Susan|
 |George|Valentine|
 |Mourine|
