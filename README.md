@@ -12,3 +12,16 @@ To develop a Personalized Recipe Recommendation System that leverages Machine Le
   The project uses the [Food.com Recipes and Reviews dataset](https://www.kaggle.com/datasets/irkaal/foodcom-recipes-and-reviews) from Kaggle.
    -   Recipes dataset: 522,517 recipes
    -   Reviews dataset: 1.4M user reviews,ratings & comments.
+# Data Cleaning and EDA
+- Missing data handling
+- Data types harmonization including time conversion
+- Deduplication
+- Feature Engineering
+- Slicing the dataset for optimal performance
+## Exploratory Data Analysis
+- Quick Descriptive analysis of both categorical and numerical variables
+- Visualize specific variables of importance to the exercise and evaluate the relationship
+- ![Recipe Popularity](https://github.com/mmuirigo/Group-6-Capstone-Project/blob/main/Popularity.png)
+
+### Exploratory Data Analysis
+## 
