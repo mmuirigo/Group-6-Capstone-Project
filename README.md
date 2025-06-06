@@ -26,5 +26,9 @@ To develop a Personalized Recipe Recommendation System that leverages Machine Le
   ### Number of Recipes per year
     ![RecipePerYear Popularity](https://github.com/mmuirigo/Group-6-Capstone-Project/blob/main/RecipePerYear.png)
 
-### Exploratory Data Analysis
+  ### Nutritional Correlation matrix
+    ![Nutritional](https://github.com/mmuirigo/Group-6-Capstone-Project/blob/main/Nutritional.png)
+  
+   ### Top 10 words from the Ingredient list
+    ![Top10Ingredients](https://github.com/mmuirigo/Group-6-Capstone-Project/blob/main/Top10Ingredients.png)
 ## 
