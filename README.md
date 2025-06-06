@@ -24,11 +24,11 @@ To develop a Personalized Recipe Recommendation System that leverages Machine Le
   ### Popularity
      ![Recipe Popularity](https://github.com/mmuirigo/Group-6-Capstone-Project/blob/main/Popularity.png)
   ### Number of Recipes per year
-    ![RecipePerYear Popularity](https://github.com/mmuirigo/Group-6-Capstone-Project/blob/main/RecipePerYear.png)
+    ![Popularity](https://github.com/mmuirigo/Group-6-Capstone-Project/blob/main/RecipePerYear.png)
 
   ### Nutritional Correlation matrix
     ![Nutritional](https://github.com/mmuirigo/Group-6-Capstone-Project/blob/main/Nutritional.png)
   
    ### Top 10 words from the Ingredient list
-    ![Top10Ingredients](https://github.com/mmuirigo/Group-6-Capstone-Project/blob/main/Top10Ingredients.png)
+    ![Ingredients](https://github.com/mmuirigo/Group-6-Capstone-Project/blob/main/Top10Ingredients.png)
 ## 
