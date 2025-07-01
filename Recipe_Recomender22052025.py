@@ -4506,30 +4506,13 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 78,
+   "execution_count": null,
    "metadata": {},
    "outputs": [
     {
      "data": {
-      "text/html": [
-       "\n",
-       "      <iframe id=\"tensorboard-frame-3bab208c22e30117\" width=\"100%\" height=\"800\" frameborder=\"0\">\n",
-       "      </iframe>\n",
-       "      <script>\n",
-       "        (function() {\n",
-       "          const frame = document.getElementById(\"tensorboard-frame-3bab208c22e30117\");\n",
-       "          const url = new URL(\"/\", window.location);\n",
-       "          const port = 6006;\n",
-       "          if (port) {\n",
-       "            url.port = port;\n",
-       "          }\n",
-       "          frame.src = url;\n",
-       "        })();\n",
-       "      </script>\n",
-       "    "
-      ],
       "text/plain": [
-       "<IPython.core.display.HTML object>"
+       "Launching TensorBoard..."
       ]
      },
      "metadata": {},
@@ -4605,174 +4588,18 @@
    "source": []
   },
   {
-   "cell_type": "markdown",
+   "cell_type": "code",
+   "execution_count": null,
    "metadata": {},
-   "source": [
-    "# Deployment "
-   ]
+   "outputs": [],
+   "source": []
   },
   {
    "cell_type": "code",
-   "execution_count": 80,
+   "execution_count": null,
    "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "* Running on local URL:  http://127.0.0.1:7861\n",
-      "* Running on public URL: https://bd1c534b59663c6f6e.gradio.live\n",
-      "\n",
-      "This share link expires in 1 week. For free permanent hosting and GPU upgrades, run `gradio deploy` from the terminal in the working directory to deploy to Hugging Face Spaces (https://huggingface.co/spaces)\n"
-     ]
-    },
-    {
-     "data": {
-      "text/html": [
-       "<div><iframe src=\"https://bd1c534b59663c6f6e.gradio.live\" width=\"100%\" height=\"500\" allow=\"autoplay; camera; microphone; clipboard-read; clipboard-write;\" frameborder=\"0\" allowfullscreen></iframe></div>"
-      ],
-      "text/plain": [
-       "<IPython.core.display.HTML object>"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "text/plain": []
-     },
-     "execution_count": 80,
-     "metadata": {},
-     "output_type": "execute_result"
-    },
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "Traceback (most recent call last):\n",
-      "  File \"C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\gradio\\queueing.py\", line 625, in process_events\n",
-      "    response = await route_utils.call_process_api(\n",
-      "               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
-      "  File \"C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\gradio\\route_utils.py\", line 322, in call_process_api\n",
-      "    output = await app.get_blocks().process_api(\n",
-      "             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
-      "  File \"C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\gradio\\blocks.py\", line 2220, in process_api\n",
-      "    result = await self.call_function(\n",
-      "             ^^^^^^^^^^^^^^^^^^^^^^^^^\n",
-      "  File \"C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\gradio\\blocks.py\", line 1731, in call_function\n",
-      "    prediction = await anyio.to_thread.run_sync(  # type: ignore\n",
-      "                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
-      "  File \"C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\anyio\\to_thread.py\", line 56, in run_sync\n",
-      "    return await get_async_backend().run_sync_in_worker_thread(\n",
-      "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
-      "  File \"C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\anyio\\_backends\\_asyncio.py\", line 2134, in run_sync_in_worker_thread\n",
-      "    return await future\n",
-      "           ^^^^^^^^^^^^\n",
-      "  File \"C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\anyio\\_backends\\_asyncio.py\", line 851, in run\n",
-      "    result = context.run(func, *args)\n",
-      "             ^^^^^^^^^^^^^^^^^^^^^^^^\n",
-      "  File \"C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\gradio\\utils.py\", line 904, in wrapper\n",
-      "    response = f(*args, **kwargs)\n",
-      "               ^^^^^^^^^^^^^^^^^^\n",
-      "  File \"C:\\Users\\admin\\AppData\\Local\\Temp\\ipykernel_13044\\2831236328.py\", line 5, in recommend_recipes\n",
-      "    return your_recommendation_function(Ingredients, TotalTimeMinutes)\n",
-      "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
-      "NameError: name 'your_recommendation_function' is not defined\n",
-      "Traceback (most recent call last):\n",
-      "  File \"C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\gradio\\queueing.py\", line 625, in process_events\n",
-      "    response = await route_utils.call_process_api(\n",
-      "               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
-      "  File \"C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\gradio\\route_utils.py\", line 322, in call_process_api\n",
-      "    output = await app.get_blocks().process_api(\n",
-      "             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
-      "  File \"C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\gradio\\blocks.py\", line 2220, in process_api\n",
-      "    result = await self.call_function(\n",
-      "             ^^^^^^^^^^^^^^^^^^^^^^^^^\n",
-      "  File \"C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\gradio\\blocks.py\", line 1731, in call_function\n",
-      "    prediction = await anyio.to_thread.run_sync(  # type: ignore\n",
-      "                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
-      "  File \"C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\anyio\\to_thread.py\", line 56, in run_sync\n",
-      "    return await get_async_backend().run_sync_in_worker_thread(\n",
-      "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
-      "  File \"C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\anyio\\_backends\\_asyncio.py\", line 2134, in run_sync_in_worker_thread\n",
-      "    return await future\n",
-      "           ^^^^^^^^^^^^\n",
-      "  File \"C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\anyio\\_backends\\_asyncio.py\", line 851, in run\n",
-      "    result = context.run(func, *args)\n",
-      "             ^^^^^^^^^^^^^^^^^^^^^^^^\n",
-      "  File \"C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\gradio\\utils.py\", line 904, in wrapper\n",
-      "    response = f(*args, **kwargs)\n",
-      "               ^^^^^^^^^^^^^^^^^^\n",
-      "  File \"C:\\Users\\admin\\AppData\\Local\\Temp\\ipykernel_13044\\2831236328.py\", line 5, in recommend_recipes\n",
-      "    return your_recommendation_function(Ingredients, TotalTimeMinutes)\n",
-      "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
-      "NameError: name 'your_recommendation_function' is not defined\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "Using existing dataset file at: .gradio\\flagged\\dataset1.csv\n"
-     ]
-    },
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "Traceback (most recent call last):\n",
-      "  File \"C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\gradio\\queueing.py\", line 625, in process_events\n",
-      "    response = await route_utils.call_process_api(\n",
-      "               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
-      "  File \"C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\gradio\\route_utils.py\", line 322, in call_process_api\n",
-      "    output = await app.get_blocks().process_api(\n",
-      "             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
-      "  File \"C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\gradio\\blocks.py\", line 2220, in process_api\n",
-      "    result = await self.call_function(\n",
-      "             ^^^^^^^^^^^^^^^^^^^^^^^^^\n",
-      "  File \"C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\gradio\\blocks.py\", line 1731, in call_function\n",
-      "    prediction = await anyio.to_thread.run_sync(  # type: ignore\n",
-      "                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
-      "  File \"C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\anyio\\to_thread.py\", line 56, in run_sync\n",
-      "    return await get_async_backend().run_sync_in_worker_thread(\n",
-      "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
-      "  File \"C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\anyio\\_backends\\_asyncio.py\", line 2134, in run_sync_in_worker_thread\n",
-      "    return await future\n",
-      "           ^^^^^^^^^^^^\n",
-      "  File \"C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\anyio\\_backends\\_asyncio.py\", line 851, in run\n",
-      "    result = context.run(func, *args)\n",
-      "             ^^^^^^^^^^^^^^^^^^^^^^^^\n",
-      "  File \"C:\\Users\\admin\\anaconda3\\Lib\\site-packages\\gradio\\utils.py\", line 904, in wrapper\n",
-      "    response = f(*args, **kwargs)\n",
-      "               ^^^^^^^^^^^^^^^^^^\n",
-      "  File \"C:\\Users\\admin\\AppData\\Local\\Temp\\ipykernel_13044\\2831236328.py\", line 5, in recommend_recipes\n",
-      "    return your_recommendation_function(Ingredients, TotalTimeMinutes)\n",
-      "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
-      "NameError: name 'your_recommendation_function' is not defined\n"
-     ]
-    }
-   ],
-   "source": [
-    "import gradio as gr\n",
-    "\n",
-    "def recommend_recipes(Ingredients, TotalTimeMinutes):\n",
-    "    # Use your existing preprocessing + recommendation logic here\n",
-    "    return your_recommendation_function(Ingredients, TotalTimeMinutes)\n",
-    "\n",
-    "iface = gr.Interface(\n",
-    "    fn=recommend_recipes,\n",
-    "    inputs=[\n",
-    "        gr.Textbox(label=\"Enter ingredients (comma-separated)\"),\n",
-    "        gr.Number(label=\"Max cooking time in minutes\", value=30)\n",
-    "    ],\n",
-    "    outputs=\"text\",\n",
-    "    title=\"Recipe Recommender\",\n",
-    "    description=\"Get recipe ideas based on your ingredients and available cooking time.\"\n",
-    ")\n",
-    "\n",
-    "iface.launch(share=True)"
-   ]
+   "outputs": [],
+   "source": []
   },
   {
    "cell_type": "code",
